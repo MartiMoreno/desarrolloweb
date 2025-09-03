@@ -10,17 +10,18 @@
 </head>
 <body>
 
-    <div id="Laseccion1" class="seccion1">
+<div id="Laseccion1" class="seccion1">
         
         <div class="logo">
         <img class="icono" src="icons/icon.png" alt="icono" width="40">
         <b>Brain WAVE</b>
 
-        
 
 
-        <label class="Toggle_brillo">
-        <input class="toggle-checkbox" type="checkbox">
+
+
+        <label class="Toggle_brillo" >
+        <input id="toggle" class="toggle-checkbox" type="checkbox">
         <div class="toggle-slot">
         <div class="sun-icon-wrapper">
         <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
@@ -31,6 +32,13 @@
         </div>
         </div>
         </label>
+
+            <script>
+                const chk = document.getElementById('toggle');
+                chk.addEventListener('change', () => {
+                    document.body.classList.toggle('dark', chk.checked);
+                });
+            </script>
 
 
 

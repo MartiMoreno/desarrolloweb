@@ -9,18 +9,22 @@
     .seccion1 {
         height: 100vh;
         background: linear-gradient(45deg,#19004d, #c3083d, #0402a5, #65033b, #120560);
+        z-index: 0;
     }
 
     .seccion2 {
         position: relative;
         height: 100vh;
         background: url("fondo.png") no-repeat center center;
+        z-index: 0;
+        transition: opacity 1.2s ease-in-out;
         background-size: cover;
     }
 
     .seccion3{
 
         height: 120vh;
+        transition: opacity 1.2s ease-in-out;
         background: black;
         background-size: cover;
     }
@@ -28,6 +32,7 @@
     .seccion4{
 
         height: 120vh;
+        transition: opacity 1.2s ease-in-out;
         background: black;
         background-size: cover;
     }
@@ -53,9 +58,11 @@
       display: flex; 
       justify-content: center;
       align-items: center;
-      color: white; 
+      color: white;
+        transition: color 1.2s ease-in-out;
       font-weight: bold;
       font-size: 18px;
+        z-index: 4;
     }
 
     .cuadrado b {
@@ -75,16 +82,21 @@
     }
 
     .icono {
-  margin-right: 8px; 
-  vertical-align: middle; 
-}
+        margin-right: 8px;
+        vertical-align: middle;
+        z-index: 5;
+        transition: opacity 1.2s ease-in-out;
+        content: url("icons/icon.png");
+    }
 
     
     .logo b {
   font-family: 'Telegraf', sans-serif;
   font-weight: 800; 
   font-size:20px;
-  color: white; 
+        transition: color 1.2s ease-in-out;
+  color: white;
+        z-index: 5;
 }
 
 .names-juntos {
@@ -103,7 +115,9 @@
   font-family: 'Telegraf', sans-serif;
   font-weight: 200;
   font-size: 12px;
+    transition: color 1.2s ease-in-out;
   color: white;
+    z-index: 5;
 }
 
 .botones {
@@ -114,7 +128,8 @@
     gap: 40px;
     padding-left: 800px;
     align-items: center;
-    z-index: 9998; 
+    z-index: 5;
+
 }
 
 .Home {
@@ -122,6 +137,8 @@
   font-family: 'Telegraf', sans-serif;
   font-size: 15px;
   color: white;
+    transition: color 1.2s ease-in-out;
+    z-index: 5;
 }
 
 .About {
@@ -129,6 +146,8 @@
   font-family: 'Telegraf', sans-serif;
   font-size: 15px;
   color: white;
+    transition: color 1.2s ease-in-out;
+    z-index: 5;
 }
 
 .Us {
@@ -136,6 +155,8 @@
   font-family: 'Telegraf', sans-serif;
   font-size: 15px;
   color: white;
+    transition: color 1.2s ease-in-out;
+    z-index: 5;
 }
 
 .Proyects {
@@ -143,6 +164,8 @@
   font-family: 'Telegraf', sans-serif;
   font-size: 15px;
   color: white;
+    transition: color 1.2s ease-in-out;
+    z-index: 5;
 }
 
 .Contact {
@@ -150,6 +173,8 @@
   font-family: 'Telegraf', sans-serif;
   font-size: 15px;
   color: white;
+    transition: color 1.2s ease-in-out;
+    z-index: 5;
 }
 
 
@@ -263,7 +288,7 @@
       width: 10px;
       height: 7px;
       background: linear-gradient(#ffffff00, #000000e7, #000000, #000000);
-
+        z-index: 1;
 }
 
     .cuadrado2 {
@@ -271,31 +296,39 @@
         width: 420px;
         height: 560px;
         background: linear-gradient(-40deg, #5200ff, #e4040b, #3f00ff);
+        transition: opacity 1.2s ease-in-out;
         top: 150px;
         left: 70px;
         border-radius: 40px;
         display: flex;
+        z-index: 3;
     }
 
     .text{
         justify-content: center;
         align-items: flex-start;
+        transition: color 1.2s ease-in-out;
         color: white;
         flex-direction: column;
         font-family: 'Telegraf', sans-serif;
         font-size:50px;
         padding-left: 40px;
         padding-top: 10px;
+        z-index: 5;
     }
 
     .cuadrado2 b{
         font-family: 'Telegraf', sans-serif;
         font-weight: 800;
         font-size:30px;
+        z-index: 3;
     }
 
     .logo2{
         padding-left: 65px;
+        z-index: 5;
+        transition: opacity 1.2s ease-in-out;
+        content: url("icons/icon.png");
     }
 
 
@@ -311,8 +344,10 @@
         display: flex;
         align-items: flex-start;
         color: white;
+        transition: opacity 1.2s ease-in-out;
         flex-direction: column;
         justify-content: flex-end;
+        z-index: 3;
     }
 
     .tit{
@@ -320,25 +355,33 @@
         font-family: 'Telegraf', sans-serif;
         font-weight: 800;
         font-size:100px;
+        transition: color 1.2s ease-in-out;
+        color: white;
         padding-left: 60px;
         padding-bottom: 175px;
+        z-index: 5;
     }
     .subtit{
         position: absolute;
         font-family: 'Telegraf', sans-serif;
         font-weight: 200;
+        transition: color 1.2s ease-in-out;
+        color: white;
         font-size:50px;
         padding-left: 60px;
         padding-bottom: 175px;
+        z-index: 5;
     }
     .text2{
         position: absolute;
         font-family: 'Telegraf', sans-serif;
         font-size:25px;
-        color: white;
         font-weight: 200;
         padding-left: 60px;
         padding-bottom: 20px;
+        transition: color 1.2s ease-in-out;
+        color: white;
+        z-index: 5;
     }
 
 
@@ -851,7 +894,119 @@
 
 
 
-/*TAMAÑOS POR DISPOSITIVO*/
+
+
+
+
+    /*----------_CAMBIO DE AMBIENTE_-----------*/
+
+    .seccion1::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background: linear-gradient(45deg, #f87070, #ffffff, #5df8ff, #d42eff,#6fffe9);
+        opacity: 0;
+        transition: opacity 1.2s ease-in-out;
+        z-index: 1;
+    }
+
+    body.dark .seccion1::after{
+        opacity: 1;
+    }
+
+
+    body.dark .cuadrado {color: black;}
+    body.dark .logo b {color: black;}
+    body.dark .names1 {color: black;}
+    body.dark .names2 {color: black;}
+    body.dark .Home {color: black;}
+    body.dark .About {color: black;}
+    body.dark .Us {color: black;}
+    body.dark .Proyects {color: black;}
+    body.dark .Contact {color: black;}
+
+    /*EJEMPLO ICONO:
+        z-index: 5;
+        transition: opacity 1.2s ease-in-out;
+        content: url("icons/icon.png");
+    } */
+    body.dark .icono {
+        content: url("icons/icon_b.png");
+    }
+
+
+    .sombra::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.64), #ffffff, #ffffff);
+        opacity: 0;
+        transition: opacity 1.2s ease-in-out;
+        z-index: 2;
+    }
+
+    body.dark .sombra::after{
+        opacity: 1;
+    }
+
+
+    body.dark .seccion2 {/*sin completar*/
+    }
+
+    body.dark .text {color: black;}
+
+    body.dark .logo2 {
+        content: url("icons/icon_b.png");
+    }
+
+    .cuadrado3::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background: linear-gradient(-20deg, rgb(255, 255, 255), rgb(149, 255, 237), rgb(255, 125, 125));
+        opacity: 0;
+        transition: opacity 1.2s ease-in-out;
+        border-radius: 40px;
+        z-index: 4;
+    }
+
+    body.dark .cuadrado3::after{
+        opacity: 1;
+    }
+
+    .cuadrado2::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background: linear-gradient(-40deg, #4bffe4, #ffffff, #ff0000);
+        opacity: 0;
+        transition: opacity 1.2s ease-in-out;
+        border-radius: 40px;
+        z-index: 4;
+    }
+
+    body.dark .cuadrado2::after{
+        opacity: 1;
+    }
+    body.dark .tit {color: black;}
+    body.dark .subtit {color: black;}
+    body.dark .text2 {color: black;}
+
+    body.dark .seccion3 {background: white;}
+    body.dark .seccion4 {background: white;}
+    /*----------------------------------------*/
+
+
+
+
+
+
+
+    /*TAMAÑOS POR DISPOSITIVO*/
 
     /* ≥ 1280px (MacBook Air 13"/13.6") */
     @media (min-width: 1280px){
@@ -931,6 +1086,20 @@
   font-size:60px;
   }
 }
+    @media (max-width: 320px){
+
+        .seccion1{
+            width: 1500px;
+        }
+
+
+        .seccion2{
+            width: 1500px;
+        }
+    }
+
+
+
 
 
 
