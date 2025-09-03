@@ -1,0 +1,679 @@
+
+    body {
+        margin: 0;
+    }
+    .seccion1 {
+        height: 100vh;
+        background: linear-gradient(45deg,#19004d, #c3083d, #0402a5, #65033b, #120560);
+    }
+
+    .seccion2 {
+        position: relative;
+        height: 100vh;
+        background: url("fondo.png") no-repeat center center;
+        background-size: cover;
+    }
+
+    .seccion3{
+
+        height: 120vh;
+        background: black;
+        background-size: cover;
+    }
+
+    .seccion4{
+
+        height: 120vh;
+        background: black;
+        background-size: cover;
+    }
+
+
+
+    .cuadrado {
+      position: absolute;
+      width: 1480px;
+      height: 680px;
+      background: #ffffff3d;
+      top: 30px;
+      left: 30px;
+      border-radius: 40px;
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      color: white; 
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .cuadrado b {
+  font-family: 'Telegraf', sans-serif;
+  font-weight: 800; 
+  font-size:90px;
+}
+
+        .logo {
+    position: absolute;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    top: 60px;
+    left: 80px;
+    border-radius: 24px;
+    }
+
+    .icono {
+  margin-right: 8px; 
+  vertical-align: middle; 
+}
+
+    
+    .logo b {
+  font-family: 'Telegraf', sans-serif;
+  font-weight: 800; 
+  font-size:20px;
+  color: white; 
+}
+
+.names-juntos {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+    padding-right: 95px;
+    box-sizing: border-box;
+}
+
+.names1, .names2 {
+  font-family: 'Telegraf', sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  color: white;
+}
+
+.botones {
+    position: absolute;
+    top: 65px;
+    left: 250px;
+    display: flex;
+    gap: 40px;
+    padding-left: 800px;
+    align-items: center;
+    z-index: 9998; 
+}
+
+.Home {
+  text-decoration: none; 
+  font-family: 'Telegraf', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+.About {
+  text-decoration: none; 
+  font-family: 'Telegraf', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+.Us {
+  text-decoration: none; 
+  font-family: 'Telegraf', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+.Proyects {
+  text-decoration: none; 
+  font-family: 'Telegraf', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+.Contact {
+  text-decoration: none; 
+  font-family: 'Telegraf', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+
+
+
+
+
+/* boton de cambio ambiente*/
+
+
+.Toggle_brillo {
+  margin-left: 30px;
+  vertical-align: middle; 
+  z-index: 9999; 
+}
+
+.toggle-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.toggle-slot {
+  font-size: 7px;
+  position: relative;
+  height: 3.5em;
+  width: 7em;
+  border: 0px solid transparent;
+  border-radius: 10em;
+  background-color: rgb(255, 255, 255);
+  transition: background-color 250ms;
+}
+
+.toggle-checkbox:checked ~ .toggle-slot {
+  background-color: #090132;
+}
+
+.toggle-button {
+  transform: translate(0.3em, 0.25em);
+  position: absolute;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  background-color: #ffeccf;
+  box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
+  transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .toggle-button {
+  background-color: #bebebe;
+  box-shadow: inset 0px 0px 0px 0.75em white;
+  transform: translate(3.65em, 0.25em);
+}
+
+.sun-icon {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  color: #ffbb52;
+}
+
+.sun-icon-wrapper {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  opacity: 1;
+  transform: translate(2em, 2em) rotate(15deg);
+  transform-origin: 50% 50%;
+  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
+  opacity: 0;
+  transform: translate(3em, 2em) rotate(0deg);
+}
+
+.moon-icon {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  color: white;
+}
+
+.moon-icon-wrapper {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  opacity: 0;
+  transform: translate(11em, 2em) rotate(0deg);
+  transform-origin: 50% 50%;
+  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2.5,.46,.71);
+  border-radius: 10em;
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
+  opacity: 1;
+  transform: translate(2em, 2em) rotate(-15deg);
+}
+
+
+    /* ----------------------------------*/
+
+
+
+
+
+.sombra {
+      position: absolute;
+      width: 10px;
+      height: 7px;
+      background: linear-gradient(#ffffff00, #000000e7, #000000, #000000);
+
+}
+
+    .cuadrado2 {
+        position: absolute;
+        width: 420px;
+        height: 560px;
+        background: linear-gradient(-40deg, #5200ff, #e4040b, #3f00ff);
+        top: 150px;
+        left: 70px;
+        border-radius: 40px;
+        display: flex;
+    }
+
+    .text{
+        justify-content: center;
+        align-items: flex-start;
+        color: white;
+        flex-direction: column;
+        font-family: 'Telegraf', sans-serif;
+        font-size:50px;
+        padding-left: 40px;
+        padding-top: 10px;
+    }
+
+    .cuadrado2 b{
+        font-family: 'Telegraf', sans-serif;
+        font-weight: 800;
+        font-size:30px;
+    }
+
+    .logo2{
+        padding-left: 65px;
+    }
+
+
+
+    .cuadrado3 {
+        position: absolute;
+        width: 850px;
+        height: 410px;
+        background: linear-gradient(-20deg, rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.12), rgb(0, 0, 0));
+        top: 300px;
+        left: 540px;
+        border-radius: 40px;
+        display: flex;
+        align-items: flex-start;
+        color: white;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .tit{
+        position: absolute;
+        font-family: 'Telegraf', sans-serif;
+        font-weight: 800;
+        font-size:100px;
+        padding-left: 60px;
+        padding-bottom: 175px;
+    }
+    .subtit{
+        position: absolute;
+        font-family: 'Telegraf', sans-serif;
+        font-weight: 200;
+        font-size:50px;
+        padding-left: 60px;
+        padding-bottom: 175px;
+    }
+    .text2{
+        position: absolute;
+        font-family: 'Telegraf', sans-serif;
+        font-size:25px;
+        color: white;
+        font-weight: 200;
+        padding-left: 60px;
+        padding-bottom: 20px;
+    }
+
+
+
+    /* CURRICULUM ALEEE*/
+    .cuadrado4{
+        position: absolute;
+        width: 380px;
+        height: 560px;
+        background: linear-gradient(-20deg, #6e0f69, #1b0c51, #020847, #0a165e,#3229bd);
+        top: 1550px;
+        left: 120px;
+        border-radius: 40px;
+        display: flex;
+    }
+
+    .details{
+        position: absolute;
+        font-family: 'Telegraf', sans-serif;
+        font-size:17px;
+        color: white;
+        font-weight: 200;
+        padding-left: 34px;
+        padding-top: 170px;
+    }
+
+    .num{
+        font-size:14px;
+    }
+    .iccon{
+        position: absolute;
+        left: 40px;
+    }
+
+    .cuadrado5 {
+        position: absolute;
+        width: 850px;
+        height: 550px;
+        background: linear-gradient(-20deg, rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.12), rgb(0, 0, 0));
+        top: 1560px;
+        left: 540px;
+        border-radius: 40px;
+        display: flex;
+        align-items: flex-start;
+        color: #ffffff;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .cuadradito{
+        position: absolute;
+        width: 360px;
+        height: 150px;
+        background: linear-gradient(90deg, rgb(225, 223, 214), rgb(239, 238, 232));
+        border-radius: 35px;
+        top: 5px;
+        left: 10px;
+        z-index: 39;
+    }
+
+    .foto1{
+        border-radius: 40px;
+        width: 260px;
+        height: 150px;
+        padding-top: 5px;
+        padding-left: 60px;
+        z-index: 40;
+    }
+
+    .tit2{
+        position: absolute;
+        font-family: 'Telegraf', sans-serif;
+        font-weight: 800;
+        font-size:70px;
+        padding-left: 60px;
+        padding-bottom: 380px;
+    }
+    .subtit2{
+        position: absolute;
+        font-family: 'Telegraf', sans-serif;
+        font-weight: 200;
+        font-size:30px;
+        padding-left: 430px;
+        padding-bottom: 460px;
+    }
+    .text3{
+        width: 350px;
+        position: absolute;
+        font-family: 'Telegraf', sans-serif;
+        font-size:23px;
+        color: white;
+        font-weight: 200;
+        padding-left: 60px;
+        padding-bottom: 20px;
+    }
+
+    .text4{
+        width: 210px;
+        position: absolute;
+        font-family: 'Telegraf', sans-serif;
+        font-size:15px;
+        color: white;
+        font-weight: 200;
+        padding-left: 400px;
+        padding-bottom: 20px;
+    }
+
+
+    .text5{
+        width: 210px;
+        position: absolute;
+        font-family: 'Telegraf', sans-serif;
+        font-size:15px;
+        color: white;
+        font-weight: 200;
+        padding-left: 630px;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+/*CURRICULUM MARRRR*/
+
+    .cuadrado4M{
+        position: absolute;
+        width: 380px;
+        height: 560px;
+        background: linear-gradient(-20deg, #cc17c3, #ec1d03, #e80202, #f36812,#f3c612);
+        top: 2390px;
+        left: 120px;
+        border-radius: 40px;
+        display: flex;
+    }
+
+    .detailsM{
+        position: absolute;
+        font-family: 'Telegraf', sans-serif;
+        font-size:17px;
+        color: white;
+        font-weight: 200;
+        padding-left: 34px;
+        padding-top: 170px;
+    }
+
+    .numM{
+        font-size:14px;
+    }
+    .icconM{
+        position: absolute;
+        left: 40px;
+    }
+
+    .cuadrado5M {
+        position: absolute;
+        width: 850px;
+        height: 550px;
+        background: linear-gradient(-20deg, rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.12), rgb(0, 0, 0));
+        top: 2400px;
+        left: 540px;
+        border-radius: 40px;
+        display: flex;
+        align-items: flex-start;
+        color: #ffffff;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .cuadraditoM{
+        position: absolute;
+        width: 360px;
+        height: 150px;
+        background: linear-gradient(90deg, rgb(230, 229, 220), rgb(239, 238, 232));
+        border-radius: 35px;
+        top: 5px;
+        left: 10px;
+        z-index: 39;
+    }
+
+    .foto1M{
+        border-radius: 40px;
+        width: 230px;
+        height: 150px;
+        padding-top: 5px;
+        padding-left: 80px;
+        z-index: 40;
+    }
+
+    .tit2M{
+        position: absolute;
+        font-family: 'Telegraf', sans-serif;
+        font-weight: 800;
+        font-size:70px;
+        padding-left: 60px;
+        padding-bottom: 380px;
+    }
+    .subtit2M{
+        position: absolute;
+        font-family: 'Telegraf', sans-serif;
+        font-weight: 200;
+        font-size:30px;
+        padding-left: 430px;
+        padding-bottom: 460px;
+    }
+    .text3M{
+        width: 350px;
+        position: absolute;
+        font-family: 'Telegraf', sans-serif;
+        font-size:23px;
+        color: white;
+        font-weight: 200;
+        padding-left: 60px;
+        padding-bottom: 20px;
+    }
+
+    .text4M{
+        width: 210px;
+        position: absolute;
+        font-family: 'Telegraf', sans-serif;
+        font-size:15px;
+        color: white;
+        font-weight: 200;
+        padding-left: 400px;
+        padding-bottom: 20px;
+    }
+
+
+    .text5M{
+        width: 210px;
+        position: absolute;
+        font-family: 'Telegraf', sans-serif;
+        font-size:15px;
+        color: white;
+        font-weight: 200;
+        padding-left: 630px;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+
+
+
+
+
+/*TAMAÑOS POR DISPOSITIVO*/
+
+    /* ≥ 1280px (MacBook Air 13"/13.6") */
+    @media (min-width: 1280px){
+        .cuadrado{
+            width: 1360px;
+            height: 620px; }
+        .logo b{ font-size: 20px; }
+        .botones{
+            padding-left: 700px;
+        }
+        .sombra{
+            width: 1440px;
+            height: 750px;
+        }
+    }
+
+
+
+
+/* Laptop (~≤1200px) */
+@media (max-width: 1200px){
+  .cuadrado{
+    width: 95vw;
+    height: 90vh;
+    left: 2.5vw;
+    top: 5vh;
+    border-radius: 24px;
+  }
+  .cuadrado b{
+    font-size:60px;
+  }
+
+      .logo b {
+  font-size:15px;
+  }
+    .botones {
+        padding-left: 350px;
+  }
+
+}
+
+
+
+
+/* Tablet (~≤768px) */
+@media (max-width: 768px){
+  .cuadrado{
+    width: 92vw;
+    height: 90vh;
+    left: 4vw;
+    top: 4vh;
+    border-radius: 20px;
+  }
+  
+  .cuadrado b{
+  font-size:60px;
+  }
+
+      .botones {
+        padding-left: 60px;
+        gap: 30px;
+  }
+
+}
+/* Móvil (~≤480px) */
+@media (max-width: 480px){
+  .cuadrado{
+    width: 94vw;
+    height: 90vh;
+    left: 3vw;
+    top: 3vh;
+    border-radius: 16px;
+    font-size: 16px;
+  }
+  
+  .cuadrado b{
+  font-size:60px;
+  }
+}
+
+
+
+
+
+
+/*Fuentes Declaradas*/
+
+@font-face {
+  font-family: 'Telegraf';
+  src: url('fonts/Telegraf_regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Telegraf';
+  src: url('fonts/Telegraf UltraBold 800.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Telegraf';
+  src: url('fonts/Telegraf UltraLight 200.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
