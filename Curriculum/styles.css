@@ -1,4 +1,8 @@
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         margin: 0;
     }
@@ -27,6 +31,14 @@
         background: black;
         background-size: cover;
     }
+
+    .seccion5{
+
+        height: 100vh;
+        background: black;
+        background-size: cover;
+    }
+
 
 
 
@@ -361,6 +373,178 @@
         left: 40px;
     }
 
+
+
+    /* BOTON CURRICULUM */
+
+    .button_cambio_curriculumA{
+        position: absolute;
+        transform: rotate(-90deg);
+        padding-left: 60px;
+
+    }
+
+    .button_cambio_curriculum{
+        right: 250px;
+        display: block;
+        position: absolute;
+        width: 56px;
+        height: 56px;
+        margin: 0;
+        overflow: hidden;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+        border: 0;
+    }
+    .button_cambio_curriculum:before,
+     .button_cambio_curriculum:after {
+         content: "";
+         position: absolute;
+         border-radius: 50%;
+         inset: 7px;
+     }
+
+    .button_cambio_curriculum:before {
+        border: 4px solid #f0eeef;
+        transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+        transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+    }
+
+    .button_cambio_curriculum:after {
+        border: 4px solid #ff6200;
+        transform: scale(1.3);
+        transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+        transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        opacity: 0;
+    }
+
+    .button_cambio_curriculum:hover:before,
+    .button_cambio_curriculum:focus:before {
+        opacity: 0;
+        transform: scale(0.7);
+        transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+        transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .button_cambio_curriculum:hover:after,
+    .button_cambio_curriculum:focus:after {
+        opacity: 1;
+        transform: scale(1);
+        transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+        transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+    }
+
+    .button_cambio_curriculum-box {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .button_cambio_curriculum-elem {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 17px 18px 0 18px;
+        transform: rotate(180deg);
+        fill: #f0eeef;
+    }
+
+    .button_cambio_curriculum:hover .button_cambio_curriculum-box,
+    .button_cambio_curriculum:focus .button_cambio_curriculum-box {
+        transition: 0.4s;
+        transform: translateX(-56px);
+    }
+
+    /* BOTON2 CURRICULUM */
+
+    .button_cambio_curriculumB{
+        position: absolute;
+        transform: rotate(90deg);
+        left: 20px;
+        padding-left: 128px;
+
+    }
+
+    .button_cambio_curriculum1{
+        left:650px;
+
+        display: block;
+        position: absolute;
+        width: 56px;
+        height: 56px;
+        margin: 0;
+        overflow: hidden;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+        border: 0;
+    }
+    .button_cambio_curriculum1:before,
+    .button_cambio_curriculum1:after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        inset: 7px;
+    }
+
+    .button_cambio_curriculum1:before {
+        border: 4px solid #f0eeef;
+        transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+        transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+    }
+
+    .button_cambio_curriculum1:after {
+        border: 4px solid #0017b6;
+        transform: scale(1.3);
+        transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+        transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        opacity: 0;
+    }
+
+    .button_cambio_curriculum1:hover:before,
+    .button_cambio_curriculum1:focus:before {
+        opacity: 0;
+        transform: scale(0.7);
+        transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+        transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .button_cambio_curriculum1:hover:after,
+    .button_cambio_curriculum1:focus:after {
+        opacity: 1;
+        transform: scale(1);
+        transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+        transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+    }
+
+    .button_cambio_curriculum1-box {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .button_cambio_curriculum1-elem {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 17px 18px 0 18px;
+        transform: rotate(180deg);
+        fill: #f0eeef;
+    }
+
+    .button_cambio_curriculum1:hover .button_cambio_curriculum1-box,
+    .button_cambio_curriculum1:focus .button_cambio_curriculum1-box {
+        transition: 0.4s;
+        transform: translateX(-56px);
+    }
+
+
+
+    /* ----------------- */
+
     .cuadrado5 {
         position: absolute;
         width: 850px;
@@ -447,6 +631,48 @@
         text-align: center;
     }
 
+    .bottonAle{
+
+        z-index: 9999;
+        border-radius: .25rem;
+        text-transform: uppercase;
+        font-family: 'Telegraf', sans-serif;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: #fff;
+        -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+        clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+        height: 50px;
+        width: 180px;
+        font-size: 0.9rem;
+        line-height: 14px;
+        letter-spacing: 1.2px;
+        transition: .2s .1s;
+        background-image: linear-gradient(90deg, #0b0d3e, #301a55, #9b2fb8);
+        border: 0 solid;
+        overflow: hidden;
+        transition: all 0.25s ease;
+    }
+
+    .bottonAle1{
+        position: absolute;
+        padding-left: 640px;
+        padding-bottom: 36px;
+    }
+
+    button:hover {
+        cursor: pointer;
+        transition: all .3s ease-in;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .bottonAle:active {
+        background: #dfdfdf;
+        color: #000;
+        transform: scale(0.97);
+    }
+
 /*CURRICULUM MARRRR*/
 
     .cuadrado4M{
@@ -454,7 +680,7 @@
         width: 380px;
         height: 560px;
         background: linear-gradient(-20deg, #cc17c3, #ec1d03, #e80202, #f36812,#f3c612);
-        top: 2390px;
+        top: 2300px;
         left: 120px;
         border-radius: 40px;
         display: flex;
@@ -483,7 +709,7 @@
         width: 850px;
         height: 550px;
         background: linear-gradient(-20deg, rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.12), rgb(0, 0, 0));
-        top: 2400px;
+        top: 2310px;
         left: 540px;
         border-radius: 40px;
         display: flex;
@@ -564,6 +790,62 @@
         text-align: center;
     }
 
+
+    .bottonMar{
+
+        z-index: 9999;
+        border-radius: .25rem;
+        text-transform: uppercase;
+        font-family: 'Telegraf', sans-serif;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: #fff;
+        -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+        clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+        height: 50px;
+        width: 180px;
+        font-size: 0.9rem;
+        line-height: 14px;
+        letter-spacing: 1.2px;
+        transition: .2s .1s;
+        background-image: linear-gradient(90deg, #ff0000, #ff006a, #c43aea);
+        border: 0 solid;
+        overflow: hidden;
+        transition: all 0.25s ease;
+    }
+
+    .bottonMar1{
+        position: absolute;
+        padding-left: 640px;
+        padding-bottom: 36px;
+    }
+
+    button:hover {
+        cursor: pointer;
+        transition: all .3s ease-in;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .bottonMar:active {
+        background: #dfdfdf;
+        color: #000;
+        transform: scale(0.97);
+    }
+
+
+
+
+    .cuadrado8{
+        position: absolute;
+        width: 1350px;
+        height: 590px;
+        background: linear-gradient(110deg, #0013a1, #e4040b, #5500ff);
+        top: 3050px;
+        left: 40px;
+        border-radius: 40px;
+        display: flex;
+    }
 
 
 
